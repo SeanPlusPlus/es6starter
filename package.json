@@ -1,0 +1,19 @@
+{
+  "name": "slackme",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node --presets latest"
+  },
+  "dependencies": {
+    "console-emoji": "^0.0.2",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-latest": "^6.24.0"
+  }
+}
