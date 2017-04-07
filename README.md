@@ -5,7 +5,7 @@ _quick and dirty starter for es6 hacking_
 to get started:
 
 ```
-git clone git@github.com:SeanPlusPlus/es6starter.git
+git clone https://github.com/SeanPlusPlus/es6starter.git
 cd es6starter
 yarn install
 ```
