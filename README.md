@@ -13,7 +13,7 @@ yarn install
 next, create a `.env` file using your text editor, and add this to the file:
 
 ```
-API_BASE=https://httpbin.org/ip
+SLACk_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 rock and roll:
