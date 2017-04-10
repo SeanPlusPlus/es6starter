@@ -1,11 +1,26 @@
 import log from 'console-emoji'
-import request from 'request'
-import dotenv from 'dotenv'
+import express from 'express'
+import bodyParser from 'body-parser'
 
-dotenv.config()
+const app = express()
+app.use(bodyParser.json())
 
-const api = process.env.API_BASE
-log(`Calling the API now :star:\t${api}`);
-request.get(api, (err, response, body) => {
-  console.log(body);
+app.get('/', (req, res) => {
+  const msg = {
+    message: 'Hello World!'
+  }
+  res.send(msg)
+})
+
+app.post('/', (req, res) => {
+  console.log(req.body);
+  const foo = {
+    message: 'Hello POST!',
+    received: req.body,
+  }
+  res.send(foo)
+})
+
+app.listen(3000, () => {
+  log('Example app listening on port 3000!', 'ok')
 })

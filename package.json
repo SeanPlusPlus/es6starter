@@ -7,8 +7,10 @@
     "start": "nodemon app.js --exec babel-node --presets latest"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
     "console-emoji": "^0.0.2",
     "dotenv": "^4.0.0",
+    "express": "^4.15.2",
     "nodemon": "^1.11.0",
     "request": "^2.81.0"
   },
